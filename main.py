@@ -41,8 +41,7 @@ def search():
         messagebox.showerror("Error", "No Data file found")
     else:
         if to_search in datas:
-            messagebox.showinfo(to_search, f"email: {datas[to_search]["email"]} \n"
-                                           f"{datas[to_search]["password"]}")
+            messagebox.showinfo(to_search, f"email: {datas[to_search]['email']} password: {datas[to_search]['password']}")
         else:
             messagebox.showerror("Error", "No Details for this website found")
 
